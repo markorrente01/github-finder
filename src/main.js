@@ -8,6 +8,7 @@ const input = document.querySelector('#search'),
        if (userText !== '') {
             git.get(userText).then(data=>{
                 if (data.profile.message === 'Not Found') {
+                    ui.clear()
                     ui.showAlert()
                 } else {
                     ui.showProfile(data.profile)
