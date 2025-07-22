@@ -248,6 +248,7 @@ a {
 
 .repo-name a {
   color: hsl(218, 80%, 60%);
+  word-wrap: break-word;
 }
 
 .repo-engagement {

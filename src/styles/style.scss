@@ -178,6 +178,7 @@ a{
 .repo-name{
     a{
         color: v.$primary-color;
+        word-wrap: break-word;
     }
 }
 .repo-engagement{
