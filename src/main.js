@@ -1,6 +1,7 @@
 import {Github} from "./modules/Github";
 import {Ui} from "./modules/Ui";
-const input = document.querySelector('#search'),
+document.addEventListener('DOMContentLoaded', ()=>{
+    const input = document.querySelector('#search'),
     git = new Github(),
     ui = new Ui();
     input.addEventListener('keyup', ()=>{
@@ -19,3 +20,4 @@ const input = document.querySelector('#search'),
             ui.clear()
        }
     })
+})
